@@ -1,4 +1,8 @@
 lst = [0, 1, 7, 2, 4, 8]
-a = lst[::2]
-b = lst.index9:-1
-print (a)
+if lst == []:
+    print(0)
+else:
+    a = lst[::2]
+    b = lst.pop()
+    c = int(sum(a)) * b
+    print (c)

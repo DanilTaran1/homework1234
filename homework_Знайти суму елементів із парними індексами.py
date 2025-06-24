@@ -4,5 +4,5 @@ if lst == []:
 else:
     a = lst[::2]
     b = lst.pop()
-    c = int(sum(a)) * b
+    c = sum(a) * b
     print (c)

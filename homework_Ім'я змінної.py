@@ -1,11 +1,19 @@
 import string
 import keyword
-my_string = input("Enter a string: ")
-if my_string[0].isdigit():
+x = string.punctuation
+y = x.replace("_","")
+my_str = input("Enter a string: ")
+if my_str[0].isdigit():
     print("False")
-if any(my_string.isupper() for my_string in my_string):
+elif my_str in keyword.kwlist:
     print("False")
-if my_string in keyword.kwlist:
+elif any(i.isupper() for i in my_str):
     print("False")
-if any(my_string for i in string.punctuation):
+elif any(i in y for i in my_str):
     print("False")
+elif my_str.startswith("_") and my_str.endswith("_"):
+    print("False")
+elif " " in my_str:
+    print("False")
+else:
+    print("True")

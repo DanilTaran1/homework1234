@@ -11,6 +11,10 @@ elif any(i.isupper() for i in my_str):
     print("False")
 elif any(i in y for i in my_str):
     print("False")
+elif my_str == "_":
+    print("True")
+elif "__" in my_str:
+    print("False")
 elif my_str.startswith("_") and my_str.endswith("_"):
     print("False")
 elif " " in my_str:

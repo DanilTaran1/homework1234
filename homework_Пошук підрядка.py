@@ -1,5 +1,5 @@
-def second_index(text:str, some_str:str):
-    text = text.find(some_str,text.find(some_str)+1)
+def second_index(text: str, some_str: str):
+    text = text.find(some_str, text.find(some_str) + 1)
     if text > 0:
         return text
     else:

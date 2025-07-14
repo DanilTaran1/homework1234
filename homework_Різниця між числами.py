@@ -2,7 +2,7 @@ def difference (*args: int or float):
     if args == ():
         return 0
     else:
-        result = round (max(args) - min(args),10)
+        result = round (max(args) - min(args),2)
         return result
 
 assert difference(1, 2, 3) == 2, 'Test1'

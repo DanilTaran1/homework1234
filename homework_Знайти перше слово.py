@@ -1,4 +1,6 @@
 import string
+
+
 def first_word(text: str) -> str:
     for char in text:
         if char in string.punctuation:

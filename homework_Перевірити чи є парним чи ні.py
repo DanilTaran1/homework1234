@@ -1,5 +1,5 @@
 def is_even(digit: int):
-    return True if digit %2 == 0 else False
+    return True if digit % 2 == 0 else False
 
 assert is_even(2) == True, 'Test1'
 assert is_even(5) == False, 'Test2'

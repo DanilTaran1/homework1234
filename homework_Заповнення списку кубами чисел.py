@@ -1,4 +1,4 @@
-def generate_cube_numbers(end:int):
+def generate_cube_numbers(end: int):
     for i in range(2, end + 1):
         cube = i ** 3
         if cube > end:

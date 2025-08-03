@@ -25,7 +25,7 @@ class Purchase:
         self.user = user
 
     def add_item(self, item, cnt):
-        self.products[item] = cnt  # перезаписує попередню кількість
+        self.products[item] = cnt
 
     def get_total(self):
         return sum(item.price * count for item, count in self.products.items())
@@ -61,7 +61,7 @@ assert isinstance(cart.user, User) is True, 'Екземпляр класу User'
 assert cart.get_total() == 60, "Всього 60"
 assert cart.get_total() == 60, 'Повинно залишатися 60!'
 
-cart.add_item(apple, 10)  # перезаписує попередню кількість
+cart.add_item(apple, 10)
 print(cart)
 """
 User: Ivan Ivanov

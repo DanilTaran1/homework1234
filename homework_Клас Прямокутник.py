@@ -33,7 +33,6 @@ class Rectangle:
         return f"Rectangle({self.width} x {self.height})"
 
 
-# Пример тестов
 r1 = Rectangle(2, 4)
 r2 = Rectangle(3, 6)
 assert r1.get_square() == 8, 'Test1'
